@@ -15,6 +15,10 @@ import pytorch_lightning as pl
 from datasets import load_dataset
 
 
+
+# Version of Llama2 used
+llama2_name = "llama-2-7b-chat.Q4_K_M.gguf"
+
 # Path to stored indexes
 DB_FAISS_PATH = 'vectorstore/db_faiss'
 
@@ -37,7 +41,7 @@ prompt = PromptTemplate(template=custom_prompt_template,
 
 # Initialisation du LLM
 llm  = LlamaCpp(
-    model_path="llama-2-7b-chat.Q4_K_M.gguf",
+    model_path= llama2_name,
     temperature=0.75, #Temperature is a quantification to how much the LLM will interfere in the retrieval procedure
    
     top_p=1,   # Quantification to the words that the Llm choose from ( = 1 is the highest)

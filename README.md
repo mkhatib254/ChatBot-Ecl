@@ -36,13 +36,13 @@ The installation differ from Mac to Pcs with CPU only to PCs with GPUs,
     - install llamacpp that takes into consideration gpu for mac:
     
 You can use this command : 
-    ```bash
+    ```
     CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python==0.2.27
     ```
 
 Then install the requirements
 
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
     
