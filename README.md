@@ -50,7 +50,7 @@ Then install the requirements
 ### For CPU only :    
 install the requirements
 
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
     
@@ -88,7 +88,7 @@ The bot can be used in 2 different methods:
 ####1. By the provided GUI from chainlit : 
 You have to go to the folder where the project is in in your terminal (or in visual code studio) and type the command 
 
-    ```bash
+    ```
     chainlit run model.py
     ```
 
