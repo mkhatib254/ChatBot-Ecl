@@ -47,6 +47,11 @@ Then install the requirements
     pip install -r requirements.txt
     ```
     
+If the installation went right but only CPU was used (see (#Notes), you can try this command : 
+    ```
+    CMAKE_ARGS="-DLLAMA_METAL_EMBED_LIBRARY=ON -DLLAMA_METAL=on" pip install -U llama-cpp-python --no-cache-dir
+    ```
+    
 
 ### For CPU only :    
 install the requirements
