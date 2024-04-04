@@ -11,7 +11,7 @@ This is an academic project in ECL done by the students : Karouma Youssef, Khati
 - [Installation](#installation)
 - [Choice of Llama2 Quantisation](#choice-of-llama2-quantisation)
 - [Usage](#usage)
-
+- [Notes](#notes)
 ## Prerequisites
 
 Before you can start using the Bot, make sure you have the following prerequisites installed on your system:
@@ -95,3 +95,6 @@ You have to go to the folder where the project is in in your terminal (or in vis
 
 2. You can use only the script ChatBot.py : 
 To do so, you have to uncommand the last while loop in the code. And then by executing the code you'll be able to chat with the bot.
+
+## Notes : 
+- In Mac, in order to know if you are using Metal or only CPU, you can check the initialisation of the Llama2. If the initialisation doesnt show Metal Buffer Size and shows only CPU Buffer Size, then you are only working on CPU, and the installation of llama-cpp wasn't quite right. 
