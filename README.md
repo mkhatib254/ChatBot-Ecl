@@ -31,7 +31,7 @@ Before you can start using the Bot, make sure you have the following prerequisit
 
 The installation differ from Mac to Pcs with CPU only to PCs with GPUs,
 
-###For Metal (apple) : 
+### For Metal (apple) : 
 
     - install the app XCode from apple store (make sure you have the last update of the macos)
     - install llamacpp that takes into consideration gpu for mac:
