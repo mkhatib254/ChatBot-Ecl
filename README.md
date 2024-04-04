@@ -5,7 +5,7 @@
 This is an academic project in ECL done by the students : Karouma Youssef, Khatib Mohamed and Tibi Daniel. The project aims to respond to questions relative to regulations in ECL.
 ## Table of Contents
 
-- [Introduction](#ChatBot Ecl)
+- [Introduction](#ChatBot-Ecl)
 - [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
