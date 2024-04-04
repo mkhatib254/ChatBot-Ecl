@@ -31,7 +31,8 @@ Before you can start using the Bot, make sure you have the following prerequisit
 
 The installation differ from Mac to Pcs with CPU only to PCs with GPUs,
 
-###If you are using an apple silicon Mac : 
+###For Metal (apple) : 
+
     - install the app XCode from apple store (make sure you have the last update of the macos)
     - install llamacpp that takes into consideration gpu for mac:
     
@@ -85,12 +86,12 @@ variable in the script ChatBot.py to the name of the version that you downloaded
 
 The bot can be used in 2 different methods:
 
-####1. By the provided GUI from chainlit : 
+1. By the provided GUI from chainlit : 
 You have to go to the folder where the project is in in your terminal (or in visual code studio) and type the command 
 
     ```
     chainlit run model.py
     ```
 
-####2. You can use only the script ChatBot.py : 
+2. You can use only the script ChatBot.py : 
 To do so, you have to uncommand the last while loop in the code. And then by executing the code you'll be able to chat with the bot.
