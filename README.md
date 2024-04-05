@@ -101,6 +101,8 @@ You have to go to the folder where the project is in in your terminal (or in vis
     ```
 For chainlit, it is a package that is built in order to make the implementation of a GUI easy for ChatBot. It is not exclusive to this project. If you are building a ChatBot too, you can check the documentation if you want to implement it for your own ChatBot : 
 https://docs.chainlit.io/get-started/overview
+
+
 2. You can use only the script ChatBot.py : 
 To do so, you have to uncommand the last while loop in the code. And then by executing the code you'll be able to chat with the bot.
 
