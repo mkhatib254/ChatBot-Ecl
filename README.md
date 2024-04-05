@@ -33,12 +33,14 @@ The installation differ from Mac to Pcs with CPU only to PCs with GPUs,
 
 ### For Metal (apple) : 
 
-    - install the app XCode from apple store (make sure you have the last update of the macos)
-    - install llamacpp that takes into consideration gpu for mac:
+- install the app XCode from apple store (make sure you have the last update of the macos)
+
+
+- install llamacpp that takes into consideration gpu for mac:
     
 You can use this command : 
     ```
-    CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python==0.2.27
+    CMAKE_ARGS="-DLLAMA_METAL_EMBED_LIBRARY=ON -DLLAMA_METAL=on" pip install -U llama-cpp-python --no-cache-dir
     ```
 
 Then install the requirements
@@ -47,10 +49,9 @@ Then install the requirements
     pip install -r requirements.txt
     ```
     
-If the installation went right but only CPU was used (see (#Notes), you can try this command : 
-    ```
-    CMAKE_ARGS="-DLLAMA_METAL_EMBED_LIBRARY=ON -DLLAMA_METAL=on" pip install -U llama-cpp-python --no-cache-dir
-    ```
+You might have to reinstall sometimes some packages. To find which ones, you can execute the ChatBot.py file and see if all the packages are installed or not (or check by pip list)
+    
+ 
     
 
 ### For CPU only :    
@@ -84,6 +85,7 @@ variable in the script ChatBot.py to the name of the version that you downloaded
 ## Usage
 
 ### The file ingest.py : 
+- You can ignore it if you want to use only the documents that were given in this git
 - This file should be run just one time. The data we worked with in the project is provided. You can add more if you want. When your documents are ready, you can run the file ingest.py in order to get your VectorStore (check the slides or the report).
 
 
