@@ -12,6 +12,8 @@ This is an academic project in ECL done by the students : Karouma Youssef, Khati
 - [Choice of Llama2 Quantisation](#choice-of-llama2-quantisation)
 - [Usage](#usage)
 - [Notes](#notes)
+- [Slides](#slides)
+- [Bibliographie](#bibliographie)
 ## Prerequisites
 
 Before you can start using the Bot, make sure you have the following prerequisites installed on your system:
@@ -72,6 +74,9 @@ https://medium.com/@ryan.stewart113/a-simple-guide-to-enabling-cuda-gpu-support-
 
 ## Choice of Llama2 Quantisation
 
+If you want to understand what is the process of quantisation, you can check the link below : 
+https://www.tensorops.ai/post/what-are-quantized-llms
+
 All the quantisations of the 7B parameters' llama2 are in the link below : 
 https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/tree/main
 
@@ -80,6 +85,8 @@ The problem with higher quantisations was with the Ram. So if you have more ram 
 
 After downloading the quantisation you want, make sure you make the file in the same folder of the project and change the #llama_2_name
 variable in the script ChatBot.py to the name of the version that you downloaded.
+
+
 
 
 ## Usage
@@ -108,3 +115,14 @@ To do so, you have to uncommand the last while loop in the code. And then by exe
 
 ## Notes : 
 - In Mac, in order to know if you are using Metal or only CPU, you can check the initialisation of the Llama2. If the initialisation doesnt show Metal Buffer Size and shows only CPU Buffer Size, then you are only working on CPU, and the installation of llama-cpp wasn't quite right. 
+
+- You can visit the Langchain page to learn how to apply theoretical knowledge into practical code. It's a framework designed to simplify the creation of applications using large language models. They offer pre-defined functions for this purpose. Here's the link to the page : https://www.langchain.com
+
+## Slides : 
+
+- In the folder slides, you will find the support used to present the project to the jury at ECL. It is a simplified way to explain the process of the work of the ChatBot
+
+## Bibliography : 
+
+- The bibliography folder gives the articles that took this project to its end. There is the article about MiniLM, the embedding that we used in order to acheive the CPU-Only solution. There is another article about Llama2 and why would it be an Llm working in a project of ChatBot, and finally there are 2 articles about the process of indexation (check slides and report) and how is faiss used. 
+
